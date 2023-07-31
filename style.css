@@ -1,0 +1,162 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #686565;
+}
+
+.welcome {
+  font-color: white;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+}
+
+model-viewer {
+  width: 500px;
+  height: 500px;
+  overflow-x: hidden;
+}
+
+.newBox {
+  display: none;
+}
+
+.productBox {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productBox img {
+  width: 500;
+  height: 500;
+}
+
+.titleBox {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.descriptionBox {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 16px;
+  border-radius: 20px;
+  background-color: #f5f3f3;
+  position: relative;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 9;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.product:hover {
+  transform: rotate3d(1, 1, 10, 360deg) scale(125%);
+  transition-delay: 0.25s;
+}
+
+.product img {
+  width: 280px;
+  height: 280px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #a9a9a9;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.top-item {
+  background-color: #a9a9a9;
+  margin-top: 0 px;
+}
+
+.top-item-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.top-item-row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-item-row img {
+  width: 350px;
+  height: auto;
+}
+
+.top-item-detail {
+  color: black;
+}
+
+.top-item-detail h3 {
+  font-size: 36px;
+  letter-spacing: 8px;
+  font-weight: 800;
+}
+
+.top-item-detail p {
+  letter-spacing: 4px;
+  font-size: 24px;
+}
